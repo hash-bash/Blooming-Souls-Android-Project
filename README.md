@@ -22,7 +22,7 @@
 - In-app image cropping tool, PDF viewer and YouTube player
 - Contact page for phone, email, address (with Google Maps integration), Facebook address and Instagram address
 - Real-time connectivity monitoring and offline alert
-- Separate Login for users and admin with proper validations
+- Separate login for users and admin with proper validations
 - Registration for new users with profile picture and complete validations
 - Onboarding slides for the newly registered users
 - Google and Facebook login/signup support
