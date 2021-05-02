@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/message_user"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="start"
+        android:maxWidth="100dp"
+        android:text="Name"
+        android:textColor="#4f4f4f"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/message_time"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="@+id/message_user"
+        android:gravity="start"
+        android:text="Time"
+        android:textColor="#4f4f4f" />
+
+    <com.github.library.bubbleview.BubbleTextView
+        android:id="@+id/message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message_user"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:elevation="5dp"
+        android:maxWidth="315dp"
+        android:padding="10dp"
+        android:text="Text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:angle="8dp"
+        app:arrowHeight="10dp"
+        app:arrowLocation="left"
+        app:arrowPosition="8dp"
+        app:arrowWidth="8dp"
+        app:bubbleColor="#4c4c4c" />
+</RelativeLayout>

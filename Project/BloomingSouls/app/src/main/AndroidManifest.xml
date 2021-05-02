@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.BloomingSouls">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".BSApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SigninAdminActivity"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SigninUserActivity"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignupActivity"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityHomeUser"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityHomeAdmin"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityChatUser"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityChatAdmin"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityProfileUser"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityProfileAdmin"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityNotificationsAdmin"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ActivityNotificationsUser"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".NavSettingsUserActivity"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ActivityHomeUser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NavSettingsAdminActivity"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ActivityHomeUser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NavContactUsActivity"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ActivityHomeUser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MapDisplay"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".NavContactUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UOptionAcademicMentoring"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ActivityHomeUser"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".UOptionAcademicMentoringDisplayPdf"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".UOptionAcademicMentoring"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UOptionAcademicMentoringDisplayVideo"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".UOptionAcademicMentoring"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UOptionCareerGuidance"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ActivityHomeUser"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".UOptionCareerGuidanceDisplayPdf"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".UOptionCareerGuidance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UOptionCareerGuidanceDisplayVideo"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".UOptionCareerGuidance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UOptionMagnificentQuotes"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ActivityHomeUser"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".UOptionSeminarAndWorkshops"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ActivityHomeUser"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".UOptionLifeCoaching"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ActivityHomeUser"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".UOptionLifeCoachingDisplayPdf"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".UOptionLifeCoaching"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UOptionLifeCoachingDisplayVideo"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".UOptionLifeCoaching"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UOptionPersonalityDevelopment"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ActivityHomeUser"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".UOptionPersonalityDevelopmentDisplayPdf"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".UOptionPersonalityDevelopment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UOptionPersonalityDevelopmentDisplayVideo"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".UOptionPersonalityDevelopment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AOptionAcademicMentoring"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ActivityHomeAdmin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AOptionAcademicMentoringPostContent"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".AOptionAcademicMentoring"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".AOptionAcademicMentoringPostPdf"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".AOptionAcademicMentoring"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AOptionAcademicMentoringPostVideo"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".AOptionAcademicMentoring"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AOptionCareerGuidance"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ActivityHomeAdmin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AOptionCareerGuidancePostContent"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".AOptionCareerGuidance"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".AOptionCareerGuidancePostPdf"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".AOptionCareerGuidance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AOptionCareerGuidancePostVideo"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".AOptionCareerGuidance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AOptionMagnificentQuotes"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ActivityHomeAdmin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AOptionMagnificentQuotesPostContent"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".AOptionMagnificentQuotes"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".AOptionSeminarAndWorkshops"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ActivityHomeAdmin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AOptionSeminarAndWorkshopsPostContent"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".AOptionSeminarAndWorkshops"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AOptionLifeCoaching"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ActivityHomeAdmin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AOptionLifeCoachingPostContent"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".AOptionLifeCoaching"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".AOptionLifeCoachingPostPdf"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".AOptionLifeCoaching"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AOptionLifeCoachingPostVideo"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".AOptionLifeCoaching"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AOptionPersonalityDevelopment"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ActivityHomeAdmin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AOptionPersonalityDevelopmentPostContent"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".AOptionPersonalityDevelopment"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".AOptionPersonalityDevelopmentPostPdf"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".AOptionPersonalityDevelopment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AOptionPersonalityDevelopmentPostVideo"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".AOptionPersonalityDevelopment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PostDetailActivity"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PdfView"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OfflineAlertIntent"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Onboarding"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PrivacyPolicy"
+            android:configChanges="orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".SigninUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".YoutubeFullscreen"
+            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logo_icon" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"
+            tools:replace="android:value" />
+
+        <service
+            android:name=".NotificationAcceptor"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

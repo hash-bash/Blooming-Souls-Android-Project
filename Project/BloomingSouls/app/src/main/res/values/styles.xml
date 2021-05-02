@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="cardViewStyle">@style/CardView.Light</item>
+        <item name="backgroundcolor">#fcfcfc</item>
+        <item name="cardbackground">#f2f2f2</item>
+        <item name="textcolor">#4C4C4C</item>
+        <item name="tintcolor">#000000</item>
+    </style>
+
+    <style name="AlertDialogBox" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">#239099</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+        <item name="android:windowBackground">@drawable/bg_white_card</item>
+        <item name="android:textColorPrimary">#4C4C4C</item>
+    </style>
+
+    <style name="DarkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#212121</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundcolor">#303030</item>
+        <item name="cardbackground">#424242</item>
+        <item name="textcolor">#fcfcfc</item>
+        <item name="tintcolor">#ffffff</item>
+    </style>
+</resources>
